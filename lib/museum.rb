@@ -15,7 +15,10 @@ class Museum
 
   def add_exhibit(title, cost)
       @exhibits[title] = cost
-    end
+  end
+
+  def admit(patron)
+
   end
 
 end
