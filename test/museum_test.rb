@@ -12,4 +12,16 @@ class MuseumTest < Minitest::Test
     assert_instance_of @imas, Museum.new
   end
 
+  def test_it_starts_with_no_exhibits
+    @imas = Museum.new
+    assert_equal {}, @imas.exhibits
+  end
+
+  def test_exhibits_can_be_added
+    @imas = Museum.new
+    @imas.add_exhibit("Here be Dragons", 12)
+    assert_equal {"Here be Dragons" => 12}, @imas.exhibits
+  end
+
+
 end
