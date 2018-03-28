@@ -8,8 +8,8 @@ require 'pry'
 class MuseumTest < Minitest::Test
 
   def test_it_exists
-    @museum = Museum.new
-    assert_instance_of @museum, Museum.new
+    @imas = Museum.new
+    assert_instance_of @imas, Museum.new
   end
 
 end

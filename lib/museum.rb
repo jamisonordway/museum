@@ -7,11 +7,16 @@ class Museum
 
   attr_reader :name,
               :exhibits
-              
-  def initialize
+
+  def initialize(name = "International Museum of Art and Science")
     @name = name
-    @exhibits = {:title => "cost"}
+    @exhibits = {"title" => "cost"}
   end
 
+  def add_exhibit(exhibit)
+    exhibit.each do |title, cost|
+      @exhibits[title] = cost
+    end
+  end
 
 end
