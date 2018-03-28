@@ -22,5 +22,12 @@ class MuseumTest < Minitest::Test
     assert_equal {"Here be Dragons" => 12}, @imas.exhibits
   end
 
+  def test_patrons_can_be_admitted
+
+  end
+
+  def test_revenue_increases_with_patron_interest
+
+  end 
 
 end
