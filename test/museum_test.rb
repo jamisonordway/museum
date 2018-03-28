@@ -23,11 +23,13 @@ class MuseumTest < Minitest::Test
   end
 
   def test_patrons_can_be_admitted
-
+    @imas = Museum.new
+    @imas.admit("Bob")
+    assert_equal ["Bob"], @imas.patrons
   end
 
   def test_revenue_increases_with_patron_interest
 
-  end 
+  end
 
 end

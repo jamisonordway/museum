@@ -5,14 +5,16 @@ require 'pry'
 
 class Museum
 
-  attr_reader :museum_name,
+  attr_accessor :museum_name,
               :exhibits,
-              :revenue
+              :revenue,
+              :patrons
 
   def initialize(museum_name = "International Museum of Art and Science")
     @museum_name = museum_name
     @exhibits = {}
     @revenue = 0
+    @patrons = []
   end
 
   def add_exhibit(title, cost)
@@ -20,6 +22,7 @@ class Museum
   end
 
   def admit(name)
+    @patrons << name
     @revenue += 10
   end
 
@@ -33,6 +36,6 @@ class Museum
 
   def remove_unpopular_exhibits(threshold)
 
-  end  
+  end
 
 end
