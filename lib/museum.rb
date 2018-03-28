@@ -5,20 +5,22 @@ require 'pry'
 
 class Museum
 
-  attr_reader :name,
-              :exhibits
+  attr_reader :museum_name,
+              :exhibits,
+              :revenue
 
-  def initialize(name = "International Museum of Art and Science")
-    @name = name
+  def initialize(museum_name = "International Museum of Art and Science")
+    @museum_name = museum_name
     @exhibits = {}
+    @revenue = 0
   end
 
   def add_exhibit(title, cost)
       @exhibits[title] = cost
   end
 
-  def admit(patron)
-
+  def admit(name)
+    
   end
 
 end
