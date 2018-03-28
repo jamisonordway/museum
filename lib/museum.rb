@@ -20,7 +20,7 @@ class Museum
   end
 
   def admit(name)
-    
+    @revenue += 10
   end
 
 end
