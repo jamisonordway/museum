@@ -1,6 +1,6 @@
 require 'minitest/autorun'
 require 'minitest/pride'
-require './test/patron_test'
+require_relative 'museum'
 require 'pry'
 
 class Patron
