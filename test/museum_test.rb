@@ -29,7 +29,9 @@ class MuseumTest < Minitest::Test
   end
 
   def test_revenue_increases_with_patron_interest
-
+    @imas = Museum.new
+    @imas.admit("Bob")
+    assert_equal 10, @imas.revenue
   end
 
 end
