@@ -23,4 +23,16 @@ class Museum
     @revenue += 10
   end
 
+  def patrons_of(exhibit)
+
+  end
+
+  def exhibits_by_attendees
+
+  end
+
+  def remove_unpopular_exhibits(threshold)
+
+  end  
+
 end
