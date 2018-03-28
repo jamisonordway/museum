@@ -10,11 +10,10 @@ class Museum
 
   def initialize(name = "International Museum of Art and Science")
     @name = name
-    @exhibits = {"title" => "cost"}
+    @exhibits = {}
   end
 
-  def add_exhibit(exhibit)
-    exhibit.each do |title, cost|
+  def add_exhibit(title, cost)
       @exhibits[title] = cost
     end
   end
